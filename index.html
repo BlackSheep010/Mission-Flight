@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Flight</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon_io (1)/favicon.ico">
+
 </head>
+
 <body>
     <!-- Header -->
-    <div class = "hero"> 
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toogle-btn" onclick="login()">Login</button>
-                <button type="button" class="toogle-btn" onclick="register()">Register</button>
-            </div>
-            <div class="social-icons">
-            <img src="icon/facebook.png">
-            <img src="icon/google.png">
-            <img src="icon/twitter.png">
-        </div>
-        <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required> 
-            <input type="text" class="input-field" placeholder="Enter Password" required> 
-            <input type="checkbox" class="check-box"> <span>Remember Password</span>
-            <button type="submit" class="submit-btn">Login</button>
-        </form>
-        <form id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required> 
-            <input type="email" class="input-field" placeholder="Email Id" required> 
-            <input type="text" class="input-field" placeholder="Enter Password" required> 
-            <input type="checkbox" class="check-box"> <span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Register</button>
-        </form>
+    <div class="Header-Nav">
+        <a class="active" href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    
+    <div class="Bg-img">
+        <img src="/images/background.jpg" alt="plane image" width="1540px" height="500px">
+        <div class="text-block">
+            <form action="" method="get">
+                <div class="form-input">
+                    <label for="from">From</label>
+                    <input type="text" placeholder="Enter City" name="" id="from">
+
+                    <label for="to">To</label>
+                    <input type="text" placeholder="Enter City" name="" id="to">
+
+                    <label for="departure">Departure</label>
+                    <input type="date" name="" id="departure">
+
+                    <label for="return">Return</label>
+                    <input type="date" name="" id="return">
+
+                    <label for="">Class</label>
+                    <select name="" id="">Class
+                        <option value="">Economy</option>
+                        <option value="">Business</option>
+                        <option value="">Premium Economy</option>
+                    </select>
+                    
+                    <button class="btn-submit"> Search</button>
+            </form>
+
         </div>
     </div>
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-        function register(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
-        }
-        
-    </script>
+    </div>
+
+    <!-- start offer and deals -->
+
+    <!-- end offer and deals -->
+
+    <!-- Start Footer -->
+
+
+
+    <footer class="footer-bar">
+        <h5>&copy 2023 - Mission Flight, India. All rights reserved/</h5>
+    </footer>
+<!-- End Footer -->
+
+
 </body>
+
 </html>
